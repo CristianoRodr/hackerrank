@@ -6,22 +6,22 @@ public class TiposDeDados {
         int nunX = in.nextInt();
         for (int i = 0; i < nunX; i++) {
             String input = in.next();
-            if (input.length() <= 20) {
+            if (input.length() <= Long.MAX_VALUE) {
                 try {
                     long n = Long.parseLong(input);
                     System.out.println(input + " can be fitted in:");
                     if (n >= Byte.MIN_VALUE && n <= Byte.MAX_VALUE) {
-                        System.out.println("* byte\n" + "* short\n" + "* int\n" + "* long");
-                        return;
-                    }else
+                        System.out.println("* byte");
+                    }
                     if (n >= Short.MIN_VALUE && n <= Short.MAX_VALUE) {
-                        System.out.println("* short\n" + "* int\n" + "* long");
-
-                    }else
+                        System.out.println("* short");
+                    }
                     if (n >= Integer.MIN_VALUE && n <= Integer.MAX_VALUE) {
-                        System.out.println("* int\n" + "* long");
-                    }else
-                    System.out.println("* long");
+                        System.out.println("* int");
+                    }
+                    if (n >= Long.MIN_VALUE && n <= Long.MAX_VALUE) {
+                        System.out.println("* long");
+                    }
                 } catch (NumberFormatException e) {
                     System.out.println(input + " can't be fitted anywhere.");
                 }
