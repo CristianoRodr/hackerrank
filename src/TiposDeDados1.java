@@ -1,5 +1,5 @@
-import java.util.Scanner;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class TiposDeDados1 {
     public static void main(String[] args) {
@@ -26,8 +26,12 @@ public class TiposDeDados1 {
             }
             if (x.compareTo(BigInteger.valueOf(Long.MAX_VALUE)) > 0 || x.compareTo(BigInteger.valueOf(Long.MIN_VALUE)) < 0) {
                 System.out.println(x + " can't be fitted anywhere.");
+
+
             }
         }
-        in.close();
+        {
+            System.out.println("Primeira coisa");
+        }
     }
 }
