@@ -33,5 +33,11 @@ public class TiposDeDados1 {
         {
             System.out.println("Primeira coisa");
         }
+        {
+            System.out.println("Primeira coisa");
+        }
+    }
+    {
+        System.out.println("Primeira coisa");
     }
 }
