@@ -26,18 +26,11 @@ public class TiposDeDados1 {
             }
             if (x.compareTo(BigInteger.valueOf(Long.MAX_VALUE)) > 0 || x.compareTo(BigInteger.valueOf(Long.MIN_VALUE)) < 0) {
                 System.out.println(x + " can't be fitted anywhere.");
-
-
             }
         }
-        {
-            System.out.println("Primeira coisa");
-        }
-        {
-            System.out.println("Primeira coisa");
-        }
     }
-    {
-        System.out.println("Primeira coisa");
+
+    static {
+        System.out.println("Prioridade");
     }
 }
