@@ -31,6 +31,7 @@ public class TiposDeDados1 {
     }
 
     static {
-        System.out.println("Prioridade");
+        System.out.println("Entre com os valores");
+        System.out.println("teste de prioridade");
     }
 }
